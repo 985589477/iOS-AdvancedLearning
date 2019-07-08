@@ -13,6 +13,7 @@
 		46057D6F22D3804F00C404EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46057D6E22D3804F00C404EF /* Assets.xcassets */; };
 		46057D7222D3804F00C404EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46057D7022D3804F00C404EF /* LaunchScreen.storyboard */; };
 		46057D7522D3804F00C404EF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 46057D7422D3804F00C404EF /* main.m */; };
+		464A466922D391350090ED99 /* NSObjCRuntimeDoc in Resources */ = {isa = PBXBuildFile; fileRef = 464A466822D391350090ED99 /* NSObjCRuntimeDoc */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		46057D7122D3804F00C404EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		46057D7322D3804F00C404EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		46057D7422D3804F00C404EF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		464A466822D391350090ED99 /* NSObjCRuntimeDoc */ = {isa = PBXFileReference; lastKnownFileType = text; path = NSObjCRuntimeDoc; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 			children = (
 				46057D6522D3804E00C404EF /* AppDelegate.h */,
 				46057D6622D3804E00C404EF /* AppDelegate.m */,
+				464A466622D390540090ED99 /* Foundation */,
 				46057D6822D3804E00C404EF /* ViewController.h */,
 				46057D6922D3804E00C404EF /* ViewController.m */,
 				46057D6B22D3804E00C404EF /* Main.storyboard */,
@@ -69,6 +72,22 @@
 				46057D7422D3804F00C404EF /* main.m */,
 			);
 			path = "OC-Foundation";
+			sourceTree = "<group>";
+		};
+		464A466622D390540090ED99 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				464A466722D390D70090ED99 /* NSObjCRuntime */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		464A466722D390D70090ED99 /* NSObjCRuntime */ = {
+			isa = PBXGroup;
+			children = (
+				464A466822D391350090ED99 /* NSObjCRuntimeDoc */,
+			);
+			path = NSObjCRuntime;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -129,6 +148,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				46057D7222D3804F00C404EF /* LaunchScreen.storyboard in Resources */,
+				464A466922D391350090ED99 /* NSObjCRuntimeDoc in Resources */,
 				46057D6F22D3804F00C404EF /* Assets.xcassets in Resources */,
 				46057D6D22D3804E00C404EF /* Main.storyboard in Resources */,
 			);
