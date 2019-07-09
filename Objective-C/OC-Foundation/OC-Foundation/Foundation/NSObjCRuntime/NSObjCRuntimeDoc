@@ -99,9 +99,47 @@ typedef NS_OPTIONS(NSUInteger, UIViewAutoresizing) {
 
 
 
-MARK - 学习到 292行了 - 
+NS_STRING_ENUM  //字符串枚举
+
+For example:
+
+    typedef NSString *kStatusCode NS_STRING_ENUM;
+
+    static const kStatusCode kStatusCodeSuccess = @"成功";
+    static const kStatusCode kStatusCodeFailure = @"失败";
 
 
+
+
+NS_ERROR_ENUM //错误类型枚举，NSErrorDomain
+
+For example:
+
+    NSErrorDomain const kErrorDomain;
+        typedef NS_ERROR_ENUM(kErrorDomain, kErrorDomainCode) {
+        kErrorDomainCodeUnkown,
+        kErrorDomainCodeSuccess,
+        kErrorDomainCodeFailure
+    };
+    kErrorDomainCode code = kErrorDomainCodeUnkown;
+
+
+
+其次就是一些反射方法
+NSStringFromSelector
+NSSelectorFromString
+NSStringFromClass
+NSClassFromString
+NSStringFromProtocol
+NSProtocolFromString
+NSGetSizeAndAlignment
+NSLog(NSString *format, ...)
+
+
+定义 YES OR NO
+就是 BOOL 1  OR  BOOL 0
+
+同时还有 MAX（求大值） MIN(求小值)  ABS(求绝对值) 函数宏定义
 
 
 

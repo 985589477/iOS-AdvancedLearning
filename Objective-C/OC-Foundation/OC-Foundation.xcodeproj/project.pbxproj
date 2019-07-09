@@ -14,6 +14,7 @@
 		46057D7222D3804F00C404EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46057D7022D3804F00C404EF /* LaunchScreen.storyboard */; };
 		46057D7522D3804F00C404EF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 46057D7422D3804F00C404EF /* main.m */; };
 		464A466922D391350090ED99 /* NSObjCRuntimeDoc in Resources */ = {isa = PBXBuildFile; fileRef = 464A466822D391350090ED99 /* NSObjCRuntimeDoc */; };
+		464A466C22D4D4C70090ED99 /* NSBundleDoc in Resources */ = {isa = PBXBuildFile; fileRef = 464A466B22D4D4C70090ED99 /* NSBundleDoc */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		46057D7322D3804F00C404EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		46057D7422D3804F00C404EF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		464A466822D391350090ED99 /* NSObjCRuntimeDoc */ = {isa = PBXFileReference; lastKnownFileType = text; path = NSObjCRuntimeDoc; sourceTree = "<group>"; };
+		464A466B22D4D4C70090ED99 /* NSBundleDoc */ = {isa = PBXFileReference; lastKnownFileType = text; path = NSBundleDoc; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 		464A466622D390540090ED99 /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				464A466A22D4D4B30090ED99 /* NSBundle */,
 				464A466722D390D70090ED99 /* NSObjCRuntime */,
 			);
 			path = Foundation;
@@ -88,6 +91,14 @@
 				464A466822D391350090ED99 /* NSObjCRuntimeDoc */,
 			);
 			path = NSObjCRuntime;
+			sourceTree = "<group>";
+		};
+		464A466A22D4D4B30090ED99 /* NSBundle */ = {
+			isa = PBXGroup;
+			children = (
+				464A466B22D4D4C70090ED99 /* NSBundleDoc */,
+			);
+			path = NSBundle;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,6 +158,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				464A466C22D4D4C70090ED99 /* NSBundleDoc in Resources */,
 				46057D7222D3804F00C404EF /* LaunchScreen.storyboard in Resources */,
 				464A466922D391350090ED99 /* NSObjCRuntimeDoc in Resources */,
 				46057D6F22D3804F00C404EF /* Assets.xcassets in Resources */,

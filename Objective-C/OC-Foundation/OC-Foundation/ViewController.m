@@ -3,7 +3,13 @@
  NSObjCRuntime                           ✅
  NSAutoreleasePool
  NSBundle
+ 
+ NSObject
  NSArray
+ NSSet
+ NSDictionary
+ 
+ NSString
  NSCharacterSet
  NSCoder
  NSData
@@ -22,7 +28,6 @@
  NSPersonNameComponentsFormatter
  NSDecimal
  NSDecimalNumber
- NSDictionary
  NSEnumerator
  NSError
  NSException
@@ -47,7 +52,7 @@
  NSNotificationQueue
  NSNull
  NSNumberFormatter
- NSObject
+
  NSOperation
  NSOrderedSet
  NSOrthography
@@ -62,10 +67,9 @@
  NSRegularExpression
  NSRunLoop
  NSScanner
- NSSet
+ 
  NSSortDescriptor
  NSStream
- NSString
  NSTextCheckingResult
  NSThread
  NSTimeZone
@@ -138,29 +142,6 @@
 #import "ViewController.h"
 #import <Foundation/Foundation.h>
 
-//typedef enum : NSUInteger {
-//    ENTypeA = 0,
-//    ENTypeB,
-//    ENTypeC,
-//} ENType;
-
-typedef enum ENType : NSUInteger {
-    ENTypeA = 0,
-    ENTypeB,
-    ENTypeC,
-} ENType;
-
-enum MyType {
-    MyTypeA,
-    MyTypeB,
-    MyTypeC
-};
-
-//enum MyType : NSUInteger {
-//    MyTypeA,
-//    MyTypeB,
-//    MyTypeC
-//};
 
 @interface ViewController ()
 
@@ -170,8 +151,25 @@ enum MyType {
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    NSUInteger i = MyTypeA;
+NSBundle *bud = [NSBundle bundleForClass:[self class]];
+    
+    
+
 }
+
+//– (id)findMatchingObject:(id)anObject {
+//    id match;
+//    while (match == nil) {
+//        @autoreleasepool {
+//            // Do a search that creates a lot of temporary objects.
+//            match = [self expensiveSearchForObject:anObject];
+//            if (match != nil) {
+//                [match retain]; /* Keep match around. */
+//            }
+//        }
+//    }
+//    return [match autorelease]; /* Let match go and return it. */
+//}
 
 
 - (void)didReceiveMemoryWarning {
