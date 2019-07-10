@@ -13,8 +13,6 @@
 		46057D6F22D3804F00C404EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46057D6E22D3804F00C404EF /* Assets.xcassets */; };
 		46057D7222D3804F00C404EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46057D7022D3804F00C404EF /* LaunchScreen.storyboard */; };
 		46057D7522D3804F00C404EF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 46057D7422D3804F00C404EF /* main.m */; };
-		464A466922D391350090ED99 /* NSObjCRuntimeDoc in Resources */ = {isa = PBXBuildFile; fileRef = 464A466822D391350090ED99 /* NSObjCRuntimeDoc */; };
-		464A466C22D4D4C70090ED99 /* NSBundleDoc in Resources */ = {isa = PBXBuildFile; fileRef = 464A466B22D4D4C70090ED99 /* NSBundleDoc */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,8 +26,9 @@
 		46057D7122D3804F00C404EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		46057D7322D3804F00C404EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		46057D7422D3804F00C404EF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		464A466822D391350090ED99 /* NSObjCRuntimeDoc */ = {isa = PBXFileReference; lastKnownFileType = text; path = NSObjCRuntimeDoc; sourceTree = "<group>"; };
-		464A466B22D4D4C70090ED99 /* NSBundleDoc */ = {isa = PBXFileReference; lastKnownFileType = text; path = NSBundleDoc; sourceTree = "<group>"; };
+		C2212C2322D5870B00FDA49C /* NSObjectDoc.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = NSObjectDoc.md; sourceTree = "<group>"; };
+		C2212C2422D5872800FDA49C /* NSBundleDoc.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = NSBundleDoc.md; sourceTree = "<group>"; };
+		C2212C2522D5883500FDA49C /* NSObjCRuntime.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = NSObjCRuntime.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +78,7 @@
 		464A466622D390540090ED99 /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				C2212C2222D586D900FDA49C /* NSObject */,
 				464A466A22D4D4B30090ED99 /* NSBundle */,
 				464A466722D390D70090ED99 /* NSObjCRuntime */,
 			);
@@ -88,7 +88,7 @@
 		464A466722D390D70090ED99 /* NSObjCRuntime */ = {
 			isa = PBXGroup;
 			children = (
-				464A466822D391350090ED99 /* NSObjCRuntimeDoc */,
+				C2212C2522D5883500FDA49C /* NSObjCRuntime.md */,
 			);
 			path = NSObjCRuntime;
 			sourceTree = "<group>";
@@ -96,9 +96,17 @@
 		464A466A22D4D4B30090ED99 /* NSBundle */ = {
 			isa = PBXGroup;
 			children = (
-				464A466B22D4D4C70090ED99 /* NSBundleDoc */,
+				C2212C2422D5872800FDA49C /* NSBundleDoc.md */,
 			);
 			path = NSBundle;
+			sourceTree = "<group>";
+		};
+		C2212C2222D586D900FDA49C /* NSObject */ = {
+			isa = PBXGroup;
+			children = (
+				C2212C2322D5870B00FDA49C /* NSObjectDoc.md */,
+			);
+			path = NSObject;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -158,9 +166,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				464A466C22D4D4C70090ED99 /* NSBundleDoc in Resources */,
 				46057D7222D3804F00C404EF /* LaunchScreen.storyboard in Resources */,
-				464A466922D391350090ED99 /* NSObjCRuntimeDoc in Resources */,
 				46057D6F22D3804F00C404EF /* Assets.xcassets in Resources */,
 				46057D6D22D3804E00C404EF /* Main.storyboard in Resources */,
 			);

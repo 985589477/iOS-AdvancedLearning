@@ -143,7 +143,7 @@
 #import <Foundation/Foundation.h>
 
 
-@interface ViewController ()
+@interface ViewController ()<NSObject>
 
 @end
 
@@ -151,25 +151,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-NSBundle *bud = [NSBundle bundleForClass:[self class]];
-    
+    [NSObject new];
     
 
 }
-
-//– (id)findMatchingObject:(id)anObject {
-//    id match;
-//    while (match == nil) {
-//        @autoreleasepool {
-//            // Do a search that creates a lot of temporary objects.
-//            match = [self expensiveSearchForObject:anObject];
-//            if (match != nil) {
-//                [match retain]; /* Keep match around. */
-//            }
-//        }
-//    }
-//    return [match autorelease]; /* Let match go and return it. */
-//}
 
 
 - (void)didReceiveMemoryWarning {
