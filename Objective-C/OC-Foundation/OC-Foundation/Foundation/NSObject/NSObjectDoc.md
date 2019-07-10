@@ -7,8 +7,8 @@ Class中提供了作为一个基类的方法，例如初始化，释放，复制
 
 Class的初始化可以使用如下方式
 ```
-	[NSObject new]
-	[[NSObject alloc] init];
+[NSObject new]
+[[NSObject alloc] init];
 ```
 系统提供了2种基本初始化方式，而我们可以通过自定义去初始化
 类方法 ： + 号方法 只能由类名调用 ，类方法也称为静态方法
@@ -16,19 +16,19 @@ Class的初始化可以使用如下方式
 通过类初始化方式创建的对象会返回一个本类对象
 那么返回值类型系统提供了一个instancetype作为返回值，用来针对子类类型的返回
 ```
- 	For example:
- 	+ (NSObject *)object;
- 	- (NSObject *)initWithObject;
- 	+ (instancetype)object;
- 	- (instacnetype)initWithObject;
+For example:
++ (NSObject *)object;
+- (NSObject *)initWithObject;
++ (instancetype)object;
+- (instacnetype)initWithObject;
 ```
 如上两种方式定义都可以完成对象的创建，但instancetype可以指向子类
 ```
-	//定义一个NSObject的子类 MyObject
-	//在使用instancetype的情况下我们使用子类接收
-	MyObject *obj = [MyObject object];
-	//在使用NSObject 作为返回方式的时候只能用NSObject接收
-	NSObject *obj = [MyObject object];
+//定义一个NSObject的子类 MyObject
+//在使用instancetype的情况下我们使用子类接收
+MyObject *obj = [MyObject object];
+//在使用NSObject 作为返回方式的时候只能用NSObject接收
+NSObject *obj = [MyObject object];
 ```
 因为我们给方法返回值固定为NSObject的类型，那么我们只能使用NSObject或者其父类接收(假设有super的情况下)，这种情况涉及到了OC三大特性之一的 多态(我们后面在说)
 
