@@ -1,14 +1,12 @@
 /*
  总结一下Foundation框架常用的类
  NSObjCRuntime                           ✅
- NSAutoreleasePool
- NSBundle
- 
- NSObject
+ NSAutoreleasePool                       ✅
+ NSBundle                                ✅
+ NSObject                                ✅
  NSArray
  NSSet
  NSDictionary
- 
  NSString
  NSCharacterSet
  NSCoder
@@ -52,7 +50,6 @@
  NSNotificationQueue
  NSNull
  NSNumberFormatter
-
  NSOperation
  NSOrderedSet
  NSOrthography
@@ -67,7 +64,6 @@
  NSRegularExpression
  NSRunLoop
  NSScanner
- 
  NSSortDescriptor
  NSStream
  NSTextCheckingResult
@@ -92,7 +88,6 @@
  NSXMLParser
  NSXPCConnection
  NSZone
- 
  NSArchiver
  NSBackgroundActivityScheduler
  NSCalendarDate
@@ -113,7 +108,6 @@
  NSXMLNodeOptions
  NSURLDownload
  NSURLHandle
- 
  NSAffineTransform
  NSAppleEventDescriptor
  NSAppleEventManager
@@ -143,7 +137,7 @@
 #import <Foundation/Foundation.h>
 
 
-@interface ViewController ()<NSObject>
+@interface ViewController ()
 
 @end
 
@@ -152,8 +146,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [NSObject new];
-    
-
 }
 
 
