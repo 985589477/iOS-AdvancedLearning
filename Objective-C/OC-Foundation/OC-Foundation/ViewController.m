@@ -145,12 +145,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [NSArray new];
-    
-    NSArray *arr = @[@1, @2, @"3"];
-    NSArray *arr1 = @[@1, @2, @3];
-    BOOL isEqual = [arr isEqualToArray:arr1];
-
+    [NSDictionary new];
 
 }
 

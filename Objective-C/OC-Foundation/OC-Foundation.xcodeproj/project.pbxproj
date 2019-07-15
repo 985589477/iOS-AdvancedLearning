@@ -34,6 +34,8 @@
 		C2212C2C22D6CDBB00FDA49C /* NSDictionaryDoc.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = NSDictionaryDoc.md; sourceTree = "<group>"; };
 		C2212C2D22D6CDCE00FDA49C /* NSStringDoc.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = NSStringDoc.md; sourceTree = "<group>"; };
 		C2212C5622DC308200FDA49C /* NSMutableArrayDoc.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = NSMutableArrayDoc.md; sourceTree = "<group>"; };
+		C2212C5722DC49F700FDA49C /* NSMutableDictionaryDoc.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = NSMutableDictionaryDoc.md; sourceTree = "<group>"; };
+		C2212C5822DC4A0700FDA49C /* NSMutableSetDoc.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = NSMutableSetDoc.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				C2212C2B22D6CDA800FDA49C /* NSSetDoc.md */,
+				C2212C5822DC4A0700FDA49C /* NSMutableSetDoc.md */,
 			);
 			path = NSSet;
 			sourceTree = "<group>";
@@ -139,6 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				C2212C2C22D6CDBB00FDA49C /* NSDictionaryDoc.md */,
+				C2212C5722DC49F700FDA49C /* NSMutableDictionaryDoc.md */,
 			);
 			path = NSDictionary;
 			sourceTree = "<group>";
