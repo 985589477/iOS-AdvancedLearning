@@ -145,7 +145,22 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [NSObject new];
+    [NSArray new];
+    
+    NSArray *arr = @[@1, @2, @"3"];
+    NSArray *arr1 = @[@1, @2, @3];
+    BOOL isEqual = [arr isEqualToArray:arr1];
+
+
+}
+
+- (NSInteger)sortMethod:(NSNumber *)obj1 obj2:(NSNumber *)obj2 {
+    if (obj1.integerValue > obj2.integerValue) {
+        return 1;
+    } else if (obj1.integerValue < obj2.integerValue) {
+        return -1;
+    }
+    return 0;
 }
 
 

@@ -33,6 +33,7 @@
 		C2212C2B22D6CDA800FDA49C /* NSSetDoc.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = NSSetDoc.md; sourceTree = "<group>"; };
 		C2212C2C22D6CDBB00FDA49C /* NSDictionaryDoc.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = NSDictionaryDoc.md; sourceTree = "<group>"; };
 		C2212C2D22D6CDCE00FDA49C /* NSStringDoc.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = NSStringDoc.md; sourceTree = "<group>"; };
+		C2212C5622DC308200FDA49C /* NSMutableArrayDoc.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = NSMutableArrayDoc.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				C2212C2A22D6CD9A00FDA49C /* NSArrayDoc.md */,
+				C2212C5622DC308200FDA49C /* NSMutableArrayDoc.md */,
 			);
 			path = NSArray;
 			sourceTree = "<group>";
