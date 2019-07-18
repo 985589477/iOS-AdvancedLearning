@@ -4,9 +4,9 @@
  NSAutoreleasePool                       ✅
  NSBundle                                ✅
  NSObject                                ✅
- NSArray
- NSSet
- NSDictionary
+ NSArray                                 ✅
+ NSSet                                   ✅
+ NSDictionary                            ✅
  NSString
  NSCharacterSet
  NSCoder
@@ -134,8 +134,6 @@
  */
 
 #import "ViewController.h"
-#import <Foundation/Foundation.h>
-
 
 @interface ViewController ()
 
@@ -145,19 +143,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [NSDictionary new];
-
+    [NSSet new];
 }
-
-- (NSInteger)sortMethod:(NSNumber *)obj1 obj2:(NSNumber *)obj2 {
-    if (obj1.integerValue > obj2.integerValue) {
-        return 1;
-    } else if (obj1.integerValue < obj2.integerValue) {
-        return -1;
-    }
-    return 0;
-}
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
