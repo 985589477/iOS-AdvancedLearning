@@ -13,6 +13,7 @@
 		46057D6F22D3804F00C404EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46057D6E22D3804F00C404EF /* Assets.xcassets */; };
 		46057D7222D3804F00C404EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46057D7022D3804F00C404EF /* LaunchScreen.storyboard */; };
 		46057D7522D3804F00C404EF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 46057D7422D3804F00C404EF /* main.m */; };
+		C2212D1822EAA8B300FDA49C /* Test.m in Sources */ = {isa = PBXBuildFile; fileRef = C2212D1722EAA8B300FDA49C /* Test.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		46057D7122D3804F00C404EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		46057D7322D3804F00C404EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		46057D7422D3804F00C404EF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C2212D1622EAA8B300FDA49C /* Test.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Test.h; sourceTree = "<group>"; };
+		C2212D1722EAA8B300FDA49C /* Test.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Test.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +65,7 @@
 				46057D6622D3804E00C404EF /* AppDelegate.m */,
 				46057D6822D3804E00C404EF /* ViewController.h */,
 				46057D6922D3804E00C404EF /* ViewController.m */,
+				C2212D1522EAA8A100FDA49C /* Source */,
 				46057D6B22D3804E00C404EF /* Main.storyboard */,
 				46057D6E22D3804F00C404EF /* Assets.xcassets */,
 				46057D7022D3804F00C404EF /* LaunchScreen.storyboard */,
@@ -69,6 +73,15 @@
 				46057D7422D3804F00C404EF /* main.m */,
 			);
 			path = "OC-Foundation";
+			sourceTree = "<group>";
+		};
+		C2212D1522EAA8A100FDA49C /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				C2212D1622EAA8B300FDA49C /* Test.h */,
+				C2212D1722EAA8B300FDA49C /* Test.m */,
+			);
+			path = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,6 +155,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				46057D6A22D3804E00C404EF /* ViewController.m in Sources */,
+				C2212D1822EAA8B300FDA49C /* Test.m in Sources */,
 				46057D7522D3804F00C404EF /* main.m in Sources */,
 				46057D6722D3804E00C404EF /* AppDelegate.m in Sources */,
 			);
@@ -284,8 +298,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 88F877B8PT;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "OC-Foundation/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -301,8 +316,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 88F877B8PT;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "OC-Foundation/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
