@@ -13,19 +13,19 @@ Pod::Spec.new do |spec|
 
 
 
-  spec.license      = { :type => "MIT", :file => "LICENSE" }
+  spec.license      = "MIT"
 
   spec.author             = { "985589477" => "lx985589477@sina.com" }
 
   spec.platform     = :ios, "8.0"
 
-  spec.ios.deployment_target = "8.0"
+  #spec.ios.deployment_target = "8.0"
 
 
   spec.source       = { :git => "https://github.com/985589477/iOS-AdvancedLearning.git", :tag => "#{spec.version}" }
 
 
-  spec.source_files  = "Objective-C/**/**/Source/*.{h,m}"
+  spec.source_files  = "Objective-C/OC-Foundation/**/Source/*.{h,m}"
 
 
   spec.requires_arc = true
